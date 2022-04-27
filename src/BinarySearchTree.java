@@ -23,6 +23,17 @@ public class BinarySearchTree {
 
     }
 
+    public Integer smallest(){
+        if(this.root != null)
+            return root.smallest();
+        return null;
+    }
+
+    public Integer largest(){
+        if(this.root != null)
+            return root.largest();
+        return null;
+    }
 //    public void delete(Integer data) {
 //        TreeNode current = this.root;
 //        TreeNode parent = this.root;

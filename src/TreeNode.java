@@ -51,7 +51,18 @@ public class TreeNode {
         }
 
     }
-
+        //método para saber qual o valor menor na tree
+    public Integer smallest(){
+        if(this.leftChild == null)
+            return this.data;
+        return this.leftChild.smallest();
+    }
+        //método para saber qual o valor maior na tree;
+    public Integer largest(){
+        if(this.rightChild == null)
+            return this.data;
+        return this.rightChild.largest();
+    }
 
     public void setData(Integer data) {
         this.data = data;

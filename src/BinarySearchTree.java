@@ -22,13 +22,13 @@ public class BinarySearchTree {
         toDel.delete();
 
     }
-
+    //encontrar o mais pequeno na tree
     public Integer smallest(){
         if(this.root != null)
             return root.smallest();
         return null;
     }
-
+    //encontrar o maior na tree
     public Integer largest(){
         if(this.root != null)
             return root.largest();
